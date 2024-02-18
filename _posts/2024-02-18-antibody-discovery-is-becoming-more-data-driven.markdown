@@ -9,17 +9,17 @@ I’m sure many people have heard phrases like “big data is going to change dr
 discovery”, or “deep learning is going to revolutionize the search for new
 medicines”. But what does this look like in practice when it comes to antibody
 discovery? In this post, we're going to talk about how antibody discovery is
-becoming more Data driven.
+becoming more data driven.
 
 # The status-quo
 
 To understand how data is changing antibody discovery, it is probably helpful to
 get an overview of the current approaches to antibody discovery so we can
 appreciate how data and algorithms are being used in novel ways. In this
-section, we I will provide that background.
+section, I will provide that background.
 
 Typically, in an antibody discovery campaign. You are trying to obtain
-antibodies that are optimal along several different dimensions. For example. You
+antibodies that are optimal across several different dimensions. For example, you may
 want antibodies that bind to orthologs of your target protein so that you can
 test out the safety and efficacy of your antibody in preclinical trials using
 model organisms. You often (although not always) want your antibodies to have
@@ -34,7 +34,7 @@ but I will go into more detail in this post.
 
 [Antibody discovery - a primer]({% post_url 2024-02-11-antibody-discovery-primer %})
 
-Any antibody discovery campaign will start with an antigen IE your drug target -
+Any antibody discovery campaign will start with an antigen i.e. your drug target -
 typically a protein, or protein complex which acts as molecular bait to capture
 binding antibodies from your antibody library. As with bait you need some way to
 recover the antigen along with its bound antibody. This is typically done by
@@ -72,7 +72,7 @@ antibody discovery campaign might take. This campaign is split into three arms,
 each arm having 4 rounds. Looking at the first arm (far left) as an example we
 see that we start off our selections with human antigen at a concentration of
 100 nanomolar. We take the output of this selection and use it as input to
-another selection however in this selection we use the mouse ortholog of our
+another selection, however in this selection we use the mouse ortholog of our
 antigen. Again, the output from this round is used as input for round three
 where we drop the concentration of our antigen to 10 Nanomolar. By swapping the
 species ortholog of our antigen and dropping the concentration, we are changing
@@ -114,7 +114,7 @@ In addition to being tricky to set up, these approaches require multiple
 sequential rounds of selection so that we can manipulate experimental parameters
 to modify our selection pressure. Unfortunately, fundamental dynamics of
 population change in our antibody library make this difficult. In between each
-selection round, our outputs antibody population is amplified in E coli. Within
+selection round, our outputs antibody population is amplified in E. coli. Within
 our antibody population there will be variation in replication rates (for
 example some antibody sequences may be shorter or be more amenable to synthesis
 by the bacterial replication machinery). A small growth advantage, compounded
@@ -123,7 +123,7 @@ dominant in the population. This phenomenon is undesirable as it reduces the
 diversity of our output, and these dominant clones are often weak binders or
 even non binders (they may have survived the selections due to their
 interactions with plastic or magnetic beads). Some of the evidence for this is
-laid out nicely in this paper (https://pubmed.ncbi.nlm.nih.gov/21339712/), where
+laid out nicely in [this paper](https://pubmed.ncbi.nlm.nih.gov/21339712/), where
 they show that no matter the size or the complexity of the antigen being
 selected against, diversity seems to drop at about the same rate as selection
 rounds progress.
@@ -154,7 +154,7 @@ loops and their epitope (binding region) on the antigen, much like a lock and
 key. If we can learn the complex relationship between 1-dimensional linear
 sequence and 3-dimensional structure and chemical properties, then we can learn
 the relationship between antibody sequences and the properties we are interested
-in. With this information, we can prediction which antibodies are likely to be
+in. With this information, we can predict which antibodies are likely to be
 fit for purpose, before doing the experiment, saving time and money, or even
 design then from scratch. I mentioned that algorithms and data are central to
 the shift we are discussing. Lets talk about these algorithms.
@@ -188,7 +188,7 @@ protein sequences.
 So deep learning models trained on amino acid sequences of proteins can learn
 complex biological patterns in sequence data if they are relevant to their
 training task. An example of the application of these techniques to antibody
-discovery came from an academic group let by [Sai
+discovery came from an academic group led by [Sai
 Reddy](https://www.nature.com/articles/s41551-021-00699-9). In this work, the
 group wanted to optimize the therapeutic antibody Trastuzumab. They generated a
 relatively small library of trastuzumab (representing less than 0.01% of the
@@ -199,8 +199,8 @@ This allowed the team to rank and filter an in-silico library for target binding
 that was much larger (3 orders of magnitude) than the one used for training.
 Building and screening a library of this size directly would have been costly
 and time consuming. In addition to being able to screen a much larger library
-in-silico, they were able to rank and filter on a number of other biophysical
-properties including low viscosity in solution and good solubility. This kind of
+in silico, they were able to rank and filter on a number of other predicted biophysical
+properties including low viscosity in solution and good solubility. This
 approach therefore opens the door to the kind of multiparameter optimization
 that we saw was difficult to do with traditional selection approaches.
 
@@ -233,7 +233,7 @@ recapitulated, despite the fact that those modifications had often been
 arrived at via expensive trial and error experimentation and with the input
 of very specialized human knowledge.
 
-Those were just couple of examples; however I hope it illustrates that with new
+Those were just a couple of examples; however I hope it illustrates that with new
 algorithms and better data, we are getting to the point where we are able to
 accurately and reliably predict antibody properties. The upside of this is huge.
 The discovery process could become faster and cheaper, an important goal, as the
@@ -254,8 +254,8 @@ takes to generate data have to come down. This is slowly happening, with
 innovations in sequencing technology rapidly driving down the cost of generating
 sequence data. On the algorithmic side, approaches that reduce the data
 requirements for effective learning will be key, such as more effective
-pretraining regimens that can use unsupervised learning to leverage larger
-unlabelled datasets. Another trend that could shift the needle would be if
+ways of training models that leverage larger more readily available data formats
+. Another trend that could shift the needle would be if
 companies and academic groups get more comfortable collaborating and sharing
 datasets (although with the level of secrecy in the industry I wouldn’t hold my
 breath on this one). Finally, it will require those that currently work in the
