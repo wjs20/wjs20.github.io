@@ -19,11 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Building in Biotech
-email: johnsteele2009@live.co.uk
+tagline: A blog dedicated to writing about scientific software
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome! Building in Biotech is a blog focused on the question of how we build
+  Building in Biotech is a blog focused on the question of how we build
   better software in biotech. Follow for posts on the newest trends, technologies and techniques.
   Feel free to reach out on any of the various platforms!
+email: johnsteele2009@live.co.uk
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: willjsteele
