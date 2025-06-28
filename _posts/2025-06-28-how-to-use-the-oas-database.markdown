@@ -174,7 +174,7 @@ print(f"Total sequences: {lf.select(pl.len()).collect().item()}")
 
 # VH - VL Pairing Preferences
 
-A core component of Seidlers work was to compare the expected distribution of light V genes with that that which was observed and test the significance of the deviation from expectation using the $\chi^2$ test.
+A core component of Seidlers work was to compare the expected distribution of light V genes with that that which was observed and test the significance of the deviation from expectation using the \\(\chi^2\\) test.
 
 $$\chi^2=\sum \frac{\left(O_i-E_i\right)^2}{E_i}$$
 
