@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to use the Observed Antibody Sequence database"
-date: 2025-06-28 15:53:00 +0000
+date: 2025-05-28 15:53:00 +0000
 categories:
 ---
 
