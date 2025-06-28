@@ -158,6 +158,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   logger
   minima (~> 2.5)
+  rouge
   webrick (~> 1.8)
 
 BUNDLED WITH
