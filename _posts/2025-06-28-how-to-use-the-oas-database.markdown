@@ -3,6 +3,7 @@ layout: post
 title:  "How to use the Observed Antibody Sequence database"
 date: 2025-05-28 15:53:00 +0000
 image: assets/2025-06-28/Analysis_25_0.png
+tags: antibodies python
 ---
 
 All code for downloading and processing the OAS database can be found [here](https://github.com/{{ site.github_username }}/oas-download)
