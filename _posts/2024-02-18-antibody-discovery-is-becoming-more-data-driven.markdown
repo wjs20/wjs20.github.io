@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Antibody discovery is becoming more data driven"
+title:  "Antibody Discovery is Becoming More Data Driven"
 date: 2024-02-18 16:00:33 +0000
 categories:
 ---

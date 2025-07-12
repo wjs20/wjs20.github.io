@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Antibody discovery - a primer"
+title:  "Antibody Discovery - A Primer"
 date:   2024-02-11 14:42:47 +0000
 categories:
 ---

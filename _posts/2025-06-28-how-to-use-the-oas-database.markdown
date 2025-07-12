@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to use the Observed Antibody Sequence database"
+title:  "How to Use the Observed Antibody Sequence Database"
 date: 2025-05-28 15:53:00 +0000
 image: assets/2025-06-28/Analysis_25_0.png
 tags: antibodies python
