@@ -3,6 +3,7 @@ layout: post
 title:  "NumPy Indexing Tricks"
 date:   2025-07-10 14:42:47 +0000
 categories: python numpy
+image: /assets/python-numpy-speed-comparison.png
 ---
 
 # Numpy Indexing Tricks
