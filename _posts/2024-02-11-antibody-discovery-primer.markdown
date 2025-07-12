@@ -2,7 +2,6 @@
 layout: post
 title:  "Antibody Discovery - A Primer"
 date:   2024-02-11 14:42:47 +0000
-categories:
 ---
 
 I hope this post will serve as a reference point for readers of later posts who
