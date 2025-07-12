@@ -7,6 +7,8 @@ categories: python numpy
 
 # Numpy Indexing Tricks
 
+The Notebook this post was generated from can be found [here](https://github.com/wjs20/numpy-indexing-demo/tree/main).
+
 > *C is a razor sharp tool, with which one can create an elegant and efficient program or a bloody mess.*
 >     - *Brian Kernigan*
 
@@ -494,6 +496,6 @@ With these changes we can now iterate fast developing algorithms on single insta
 
 ## Summary
 
-By thinking ahead of time about how the shape of your data may change, you can write code to anticipate these changes, speeding up your development cycle and avoiding nasty bugs. A key trick is to think about whether your axes indices are invariant from the right or the left. i.e if I insert a dimension I plan to introduce later, will the index of this axis change? Will it also change if I index it from the opposite end? i.e. `array[-1]` instead of `array[2]`. Broadcasting is the killer feature of NumPy, which will allow you to write faster more efficient code, but it should be treated with respect. If you find you struggle with this, don't worry; its complicated! My recommendation is, find a toy problem, fire up a jupyter notebook and mess around with some arrays.
+By thinking ahead of time about how the shape of your data may change, you can write code to anticipate these changes, speeding up your development cycle and avoiding nasty bugs. A key trick is to think about whether your axes indices are invariant from the right or the left. i.e if I insert a dimension I plan to introduce later, will the index of this axis change? Will it also change if I index it from the opposite end? i.e. `array[-1]` instead of `array[2]`. Broadcasting is the killer feature of NumPy, which will allow you to write faster more efficient code, but it should be treated with respect. If you find you struggle with this, don't worry; its complicated! My recommendation is, find a toy problem, fire up a jupyter notebook and mess around with some arrays. You can download the code from this notebook to experiment with further by going to the link at the start of the post.
 
 As always feel free to reach out if you like the post and want to know more. Happy NumPy'ing!
