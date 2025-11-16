@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Antibody Discovery - A Primer"
+title:  "Antibody discovery primer"
 date:   2024-02-11 14:42:47 +0000
 ---
 
@@ -103,7 +103,7 @@ cancerous cell proteins for example, we can limit the damage done to other
 tissues in the body.
 
 
-# How are Antibody therapeutics discovered?
+# How are antibody therapeutics discovered?
 
 We have learned in previous sections about some of the salient features of
 antibodies, and why their popularity as therapeutics has taken off. But what are

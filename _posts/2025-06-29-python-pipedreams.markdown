@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Python Pipedreams"
+title:  "Python pipedreams"
 date:   2025-07-02 14:42:47 +0000
 tags: python unix
 ---
 
 Unix pipelines are a mainstay of any bioinformatics analysis. Similarly, python is an extremely powerful and flexible programming language that can be used to accomplish data processing tasks. Naturally there comes a point when you want to combine them. If you do this however, you will find that python has some idiosyncracies that make the iterative workflow of developing pipelines a bit of a pain. This post will show you how you can get around these idiosyncracies to realize your python pipedreams 😉.
 
-## What are Pipelines?
+## What are pipelines?
 
 Unix pipelines are one of the most (if not the most) powerful feature of unix operating systems. They allow you to compose small modular building blocks to perform a huge variety of data manipulation tasks, and are particularly important in bioinformatics, where work often involves shuttling data between various programs and mashing data into shape. An example of a unix pipeline can be seen below for those who aren't familiar.
 
@@ -23,7 +23,7 @@ One of the really nice things about programming in this way is that it is highly
 Pipelines are powerful in part because they expose a huge number of highly optimized built-in programs that you can use, dramatically reducing the amount of code (and bugs) you write. Sometimes however, you need to do some slightly more complex processing, and the built-in tools don't cut it. At this point you might create a custom python tool to slot into your pipeline. Although this works, if you pipe the output of the program to head, you may find that you generate a python exception, and an annoying stacktrace pops up in your terminal. We will get to why this happens later on, but first let me explain why you might want to do this.
 
 
-## The Iterative Approach to Pipeline Development
+## The iterative approach to pipeline development
 
 You will often find yourself writing pipelines to process data you are not that familiar with. You may also have forgotten some of the command line arguments to a tool, or how the output tends to be formatted. For this reason the most effective way to create pipelines is to build them up piece by piece, checking the output as you go. Below is an example taken directly from my shell history.
 
@@ -43,7 +43,7 @@ As you can see, I start with just the `awk` command and pipe it to `head` which 
 
 When head terminates (after the 10th line by default) it will close its standard in stream. The previous program attempts to write the next line of output to the standard in of `head` but finds that it can't because it is closed, which causes a 'broken pipe' (SIGPIPE) signal to be triggered. The default behaviour of most unix programs upon recieving this signal is to exit. This process repeats back through the pipeline until all programs have terminated. Although the default behavour of most unix programs is to exit gracefully on getting a SIGPIPE, python behaves differently by defualt. Lets confirm this by including a small python program in the above pipeline.
 
-## Pythons Interaction with SIGPIPE
+## Pythons interaction with SIGPIPE
 
 I created a small script that does essentially what `tr` is doing in the above pipeline.
 

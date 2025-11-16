@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "NumPy Indexing Tricks"
+title:  "NumPy indexing tricks"
 date:   2025-07-10 14:42:47 +0000
 tags: python numpy
 image: /assets/2025-07-11/python-numpy-speed-comparison.png
 ---
 
-# Numpy Indexing Tricks
+# Numpy indexing tricks
 
 The Notebook this post was generated from can be found [here](https://github.com/wjs20/numpy-indexing-demo/tree/main).
 

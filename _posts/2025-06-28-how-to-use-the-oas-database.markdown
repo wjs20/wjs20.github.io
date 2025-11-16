@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to Use the Observed Antibody Sequence Database"
+title:  "How to use the Observed Antibody Sequence database"
 date: 2025-05-28 15:53:00 +0000
 image: assets/2025-06-28/Analysis_25_0.png
 tags: antibodies python
@@ -205,7 +205,7 @@ print(f"P-value: {pval}")
 
 The p-value we get out is 0.0, which tells us there is effectively 0 chance that the difference we are seeing between our observed and expected frequency distributions of light variable genes could have been observed were there no dependance on the heavy variable gene, which is what they showed in the paper. If we were looking at a single study only, then you might suspect that the pairing preferences were an artifact of the sampling process. For example, perhaps a particular heavy light germline pair respond particularly well to the flu vaccine components, which many of the study participants had just received. However, according to Seidlers et al, This preference showed up across studies with varied populations, so its probably safe to say this is a real phenomena we are observing. The authors speculate that these preferences may be driven by charge interactions, although the full determinants seem to remain somewhat elusive.
 
-## VL HCDR3 Loop Length Interaction
+## VL HCDR3 loop length interaction
 
 Another relationship that could be interesting to look at is that between the light germline family and the length of the heavy CDR3. i.e. are there some light germline families that support longer heavy CDR3s? Lets first compute the lengths and then check that they make sense.
 
